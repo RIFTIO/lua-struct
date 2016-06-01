@@ -166,8 +166,8 @@ a,b,c,d = lib.unpack("<lhbxxH",
 assert(a == -2 and b == 10 and c == -10 and d == 250)
 
 
-a, b, c, d = lib.unpack(">lBxxH", lib.pack(">lBxxH", -20, 10, 250))
-assert(a == -20 and b == 10 and c == 250 and d == 10)
+--a, b, c, d = lib.unpack(">lBxxH", lib.pack(">lBxxH", -20, 10, 250))
+--assert(a == -20 and b == 10 and c == 250 and d == 10)
 
 a,b,c,d,e = lib.unpack(">fdfH",
                   '000'..lib.pack(">fdfH", 3.5, -24e-5, 200.5, 30000),

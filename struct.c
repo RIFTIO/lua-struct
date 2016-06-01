@@ -33,8 +33,8 @@
 #include <string.h>
 
 
-#include "lua.h"
-#include "lauxlib.h"
+#include "luajit-2.0/lua.h"
+#include "luajit-2.0/lauxlib.h"
 
 
 #if (LUA_VERSION_NUM >= 502)
